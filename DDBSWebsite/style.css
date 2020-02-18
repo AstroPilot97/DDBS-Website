@@ -1,0 +1,439 @@
+@font-face {
+font-family: "Halogen";
+src: url("fonts/Halogen.ttf");
+}
+
+@font-face {
+font-family: "RifficFree-Bold";
+src: url("fonts/RifficFree-Bold.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0px;
+	border:0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.home-bg {
+	background-image: url("graphics/about.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.team-bg {
+	background-image: url("graphics/team background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.characters-bg {
+	background-image: url("graphics/about.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.soundtrack-bg {
+	background-image: url("graphics/about.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.downloads-bg {
+	background-image: url("graphics/Club_festival.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.navbar {
+	margin: auto;
+	background-color: hsla(220, 93%, 59%, 0.6);
+	text-align: center;
+	font-size: 2em;
+	font-family: RifficFree-Bold;
+	padding-top: 2%;
+	display: inline-block;
+   padding-bottom: 2%;
+	height: auto;
+	width: 100%;
+}
+
+.navbar a {
+	color: hsl(192, 100%, 89%);
+	text-decoration: none;
+	padding: 1%;
+}
+
+#smooth {
+	scroll-behavior: smooth;
+}
+
+a.active {
+	color: hsl(290, 0%, 100%);
+	text-decoration: none;
+}
+
+#homeContent {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+.dokiBanner {
+	padding-top: 2%;
+	display: inline;
+}
+
+#dokiLeft {
+	width: 26%;
+}
+
+#dokiRight {
+	width: 25%;
+}
+
+#logo {
+	width: 30%;
+}
+
+#vidCaption {
+	font-family: RifficFree-Bold;
+	font-size: 2.5em;
+	text-shadow: 5px 4px 8px black;
+	padding-top: 5%;
+	color: hsl(290, 0%, 100%)
+}
+
+#trailerVideo {
+	padding: 5%;
+}
+
+#aboutContent {
+	margin: auto;
+	text-align: center;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	width: 55%;
+	right: 25%;
+	box-sizing: border-box;
+}
+
+.gallery {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 2;
+}
+.prev {
+  left: 0%;
+}
+
+.next {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modDescription {
+	text-align: left;
+	padding-top: 5%;
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+	font-size: 2em;
+}
+
+#features {
+	font-style: bold;
+	font-size: 7em;
+	text-shadow: 5px 4px 35px black;
+	font-family: RifficFree-Bold;
+	color: hsl(290, 0%, 100%);
+}
+
+#featureList {
+	list-style-type: none;
+	font-family: Halogen;
+	font-size: 2em;
+	color: hsl(290, 0%, 100%);
+	text-align: justify;
+	padding-left: 25%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.teaserGallery {
+	position: relative;
+	padding-top: 2%;
+}
+
+.teaserVideo {
+	display: none;
+}
+
+.vidPrev,
+.vidNext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 2;
+}
+
+.vidPrev {
+  left: 0;
+}
+
+.vidNext {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+.vidPrev:hover,
+.vidNext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#downloadHere {
+	padding-top: 50%;
+	font-style: bold;
+	font-size: 5em;
+	text-shadow: 5px 4px 15px black;
+	font-family: RifficFree-Bold;
+	position: relative;
+	z-index: 1;
+	color: hsl(290, 0%, 100%);
+	clear: both;
+}
+
+#downloadHere a {
+	color: hsl(290, 0%, 100%);
+	text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#sideLeft {
+	float:left;
+	display:block;
+}
+
+#sideRight {
+	display:block;
+}
+
+#credits {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.position {
+	font-family: Halogen;
+	font-size: 4em;
+	color: hsl(290, 0%, 100%);
+}
+
+.nicks {
+	text-align: center;
+	padding-bottom: 3%;
+	list-style-type: none;
+	font-family: Halogen;
+	font-size: 2em;
+	color: hsl(290, 0%, 100%);
+	text-align: center;
+}
+
+#downloads {
+	margin-left: 21%;
+	text-align: center;
+	padding: 5%;
+	clear: both;
+   display: table;
+}
+
+.dokiLogos {
+	float: left;
+	width: 33.33%;
+	transition: all .2s ease-in-out;
+	padding: 2%;
+	padding-top: 0%;
+	-webkit-filter: brightness(50%);
+   filter: brightness(50%);
+}
+
+
+.dokiLogos:hover { 
+	transform: scale(1.2); 
+	transition: all .3s ease-in-out;
+   -webkit-filter: brightness(100%);
+   filter: brightness(100%);
+}
+
+.logoDesc {
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+	font-size: 3em;
+	text-align: center;
+}
+
+#fullRelease {
+	margin-left: 12%;
+	float: none;
+	width: 50%;
+}
+
+#mainCharacters {
+	text-align: center;
+	display: inline-block;
+	clear: both;
+   width:100%;
+}
+
+.castHeader {
+	padding-top: 2%;
+	padding-bottom: 1%;
+	font-style: bold;
+	text-align: center;
+	font-size: 6em;
+	text-shadow: 5px 4px 35px black;
+	font-family: RifficFree-Bold;
+	color: hsl(290, 0%, 100%);
+}
+
+.mainCast {
+	float: left;
+	width: 20%;
+	margin-left:10%;
+	transition: all .2s ease-in-out;
+	-webkit-filter: brightness(50%);
+   filter: brightness(50%);
+}
+
+
+.mainCast:hover { 
+	transition: all .3s ease-in-out;
+   -webkit-filter: brightness(100%);
+   filter: brightness(100%);
+}
+
+.mainDesc {
+	font-family: RifficFree-bold;
+	-webkit-text-stroke: 1px black;
+	color: hsl(290, 0%, 100%);
+	font-size: 3em;
+	text-align: center;
+}
+
+#sideCharacters {
+	text-align: center;
+	display: table;
+   width:100%;
+}
+
+.sideCast {
+	padding: 2%;
+	float:left;
+	width: 15%;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+	bottom: 0%;
+	
+}
+
+#footerMessage {
+	color: hsl(290, 0%, 100%);
+	font-family: Halogen;
+	font-size: 1em;
+	font-style: none;
+}
+
+#footerMessage a {
+	color: hsl(290, 0%, 100%);
+	text-decoration: none;
+}
