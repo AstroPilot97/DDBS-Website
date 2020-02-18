@@ -408,22 +408,71 @@ a.active {
 
 #sideCharacters {
 	text-align: center;
-	display: table;
    width:100%;
 }
 
-.sideCast {
-	padding: 2%;
-	float:left;
-	width: 15%;
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-gap: 
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container img {
+	padding: 5%;
+	padding-bottom: 0%;
+	padding-top: 1%;
+}
+
+.sideCaption {
+	text-align: justify;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 0%;
+	padding: 0.5%;
+	margin-left: 3%;
+	margin-right: 6%;
+	font-size: 1.25em;
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+}
+
+.sideCaption h1 {
+		text-align: center;
+		font-family: RifficFree-Bold;
+		-webkit-text-stroke: 2px black;
+		font-size: 2.5em;
+		margin-top: 1%;
 }
 
 footer {
 	background-color: black;
 	text-align: center;
 	width: 100%;
-	bottom: 0%;
-	
+	bottom: 0%;	
+}
+
+#bullyCaption {
+	text-align: justify;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 0.5%;
+	padding: 0.5%;
+	margin-left: 35%;
+	margin-bottom: 2%;
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+	font-size: 1.25em;
+	width: 30%;
+}
+
+#bullyCaption h1 {
+		text-align: center;
+		font-family: RifficFree-Bold;
+		-webkit-text-stroke: 2px black;
+		font-size: 2.5em;
+		margin-top: 1%;
 }
 
 #footerMessage {
