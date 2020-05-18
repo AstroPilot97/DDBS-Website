@@ -1,0 +1,351 @@
+@font-face {
+font-family: "Halogen";
+src: url("../fonts/Halogen.ttf");
+}
+
+@font-face {
+font-family: "RifficFree-Bold";
+src: url("../fonts/RifficFree-Bold.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0px;
+	border:0;
+}
+
+html{
+	scroll-behavior: smooth;
+	position: relative; 
+	min-height: 100%; 
+}
+
+
+.home-bg {
+	background-image: url("../graphics/about(darker).jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   
+}
+
+.team-bg {
+	background-image: url("../graphics/team background.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.characters-bg {
+	background-image: url("../graphics/about.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.soundtrack-bg {
+	background-image: url("../graphics/about.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.downloads-bg {
+	background-image: url("../graphics/Club_festival.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.navbar {
+	background-color: hsla(220, 93%, 59%, 0.6);
+	font-size: 2em;
+	font-family: RifficFree-Bold;
+	display: inline-flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+#navLogo {
+	margin-right: 20px;
+}
+
+.navbar a {
+	color: hsl(192, 100%, 89%);
+	text-decoration: none;
+	margin-top: 10px;
+	padding: 1%;
+}
+
+#smooth {
+	scroll-behavior: smooth;
+}
+
+a.active {
+	color: hsl(290, 0%, 100%);
+	text-decoration: none;
+}
+
+#banner {
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.dokiBanner {
+	position: absolute;
+	width: 100%;
+}
+
+#bgVideo {
+	width: 100%;
+}
+
+#mainHeader {
+	padding: 8%;
+	margin-left: 12%;
+}
+
+#aboutContent {
+	margin: auto;
+	text-align: center;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	width: 50%;
+	right: 25%;
+	box-sizing: border-box;
+}
+
+#teaserVideo {
+	padding-bottom: 2%;
+}
+
+
+#modDescription {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+#features {
+	padding-top: 5%;
+}
+
+#featureList {
+	padding-top: 8%;
+}
+
+#bottomRow {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2%;
+}
+
+#downloadButton {
+	padding-top: 15%;
+	height: 50%;
+}
+
+#credits {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.position {
+	font-family: Halogen;
+	font-size: 4em;
+	color: hsl(290, 0%, 100%);
+}
+
+.nicks {
+	text-align: center;
+	padding-bottom: 3%;
+	list-style-type: none;
+	font-family: Halogen;
+	font-size: 2em;
+	color: hsl(290, 0%, 100%);
+	text-align: center;
+}
+
+#downloads {
+	margin-left: 21%;
+	text-align: center;
+	padding: 5%;
+	clear: both;
+   display: table;
+}
+
+.dokiLogos {
+	float: left;
+	width: 33.33%;
+	transition: all .2s ease-in-out;
+	padding: 2%;
+	padding-top: 0%;
+	-webkit-filter: brightness(50%);
+   filter: brightness(50%);
+}
+
+
+.dokiLogos:hover { 
+	transform: scale(1.2); 
+	transition: all .3s ease-in-out;
+   -webkit-filter: brightness(100%);
+   filter: brightness(100%);
+}
+
+.logoDesc {
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+	font-size: 3em;
+	text-align: center;
+}
+
+#fullRelease {
+	margin-left: 12%;
+	float: none;
+	width: 50%;
+}
+
+#mainCharacters {
+	text-align: center;
+	display: inline-block;
+	clear: both;
+   width:100%;
+}
+
+.castHeader {
+	padding-top: 2%;
+	padding-bottom: 1%;
+	font-style: bold;
+	text-align: center;
+	font-size: 6em;
+	text-shadow: 5px 4px 35px black;
+	font-family: RifficFree-Bold;
+	color: hsl(290, 0%, 100%);
+}
+
+.mainCast {
+	float: left;
+	width: 20%;
+	margin-left:10%;
+	transition: all .2s ease-in-out;
+	-webkit-filter: brightness(50%);
+   filter: brightness(50%);
+}
+
+
+.mainCast:hover { 
+	transition: all .3s ease-in-out;
+   -webkit-filter: brightness(100%);
+   filter: brightness(100%);
+}
+
+.mainDesc {
+	font-family: RifficFree-bold;
+	-webkit-text-stroke: 1px black;
+	color: hsl(290, 0%, 100%);
+	font-size: 3em;
+	text-align: center;
+}
+
+#sideCharacters {
+	text-align: center;
+   width:100%;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container img {
+	padding: 5%;
+	padding-bottom: 0%;
+	padding-top: 1%;
+}
+
+.sideCaption {
+	text-align: justify;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 0%;
+	padding: 0.5%;
+	margin-left: 3%;
+	margin-right: 6%;
+	font-size: 1.25em;
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+}
+
+.sideCaption h1 {
+		text-align: center;
+		font-family: RifficFree-Bold;
+		-webkit-text-stroke: 2px black;
+		font-size: 2.5em;
+		margin-top: 1%;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#bullyCaption {
+	text-align: justify;
+	background-color: hsla(220, 93%, 59%, 0.7);
+	padding-top: 0.5%;
+	padding: 0.5%;
+	margin-left: 35%;
+	margin-bottom: 2%;
+	font-family: Halogen;
+	color: hsl(290, 0%, 100%);
+	font-size: 1.25em;
+	width: 30%;
+}
+
+#bullyCaption h1 {
+		text-align: center;
+		font-family: RifficFree-Bold;
+		-webkit-text-stroke: 2px black;
+		font-size: 2.5em;
+		margin-top: 1%;
+}
+
+#footerMessage {
+	color: hsl(290, 0%, 100%);
+	font-family: Halogen;
+	font-size: 1em;
+}
+
+#footerMessage a {
+	color: hsl(290, 0%, 100%);
+	text-decoration: none;
+}
