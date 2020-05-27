@@ -43,7 +43,7 @@ html{
 }
 
 .characters-bg {
-	background-image: url("../graphics/about.png");
+	background-image: url("../graphics/about(darker).jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -53,7 +53,7 @@ html{
 }
 
 .soundtrack-bg {
-	background-image: url("../graphics/about.png");
+	background-image: url("../graphics/about(darker).jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -159,11 +159,11 @@ a.active {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 2%;
+	width: 100%;
 }
 
 #downloadButton {
-	padding-top: 15%;
-	height: 50%;
+	height: 100%;
 }
 
 #credits {
@@ -269,43 +269,10 @@ a.active {
 }
 
 #sideCharacters {
+	padding-top: 5%;
+	padding-bottom: 5%;
 	text-align: center;
-   width:100%;
-}
-
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-container img {
-	padding: 5%;
-	padding-bottom: 0%;
-	padding-top: 1%;
-}
-
-.sideCaption {
-	text-align: justify;
-	background-color: hsla(220, 93%, 59%, 0.7);
-	padding-top: 0%;
-	padding: 0.5%;
-	margin-left: 3%;
-	margin-right: 6%;
-	font-size: 1.25em;
-	font-family: Halogen;
-	color: hsl(290, 0%, 100%);
-}
-
-.sideCaption h1 {
-		text-align: center;
-		font-family: RifficFree-Bold;
-		-webkit-text-stroke: 2px black;
-		font-size: 2.5em;
-		margin-top: 1%;
+   	width:100%;
 }
 
 footer {
@@ -316,27 +283,6 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
-
-#bullyCaption {
-	text-align: justify;
-	background-color: hsla(220, 93%, 59%, 0.7);
-	padding-top: 0.5%;
-	padding: 0.5%;
-	margin-left: 35%;
-	margin-bottom: 2%;
-	font-family: Halogen;
-	color: hsl(290, 0%, 100%);
-	font-size: 1.25em;
-	width: 30%;
-}
-
-#bullyCaption h1 {
-		text-align: center;
-		font-family: RifficFree-Bold;
-		-webkit-text-stroke: 2px black;
-		font-size: 2.5em;
-		margin-top: 1%;
 }
 
 #footerMessage {
