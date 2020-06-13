@@ -20,9 +20,8 @@ html{
 	min-height: 100%; 
 }
 
-
 .home-bg {
-	background-image: url("../graphics/about(darker).jpg");
+	background-image: url("../graphics/bg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -33,7 +32,7 @@ html{
 }
 
 .team-bg {
-	background-image: url("../graphics/team background.png");
+	background-image: url("../graphics/Club_festival.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -43,7 +42,7 @@ html{
 }
 
 .characters-bg {
-	background-image: url("../graphics/about(darker).jpg");
+	background-image: url("../graphics/bg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -53,7 +52,7 @@ html{
 }
 
 .soundtrack-bg {
-	background-image: url("../graphics/about(darker).jpg");
+	background-image: url("../graphics/bg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -109,6 +108,12 @@ a.active {
 	overflow: hidden;
 }
 
+#banner video {
+	position: relative; /* could be absolute if needed */
+	z-index: -1;
+    bottom: 1px;
+}
+
 .dokiBanner {
 	position: absolute;
 	width: 100%;
@@ -120,26 +125,31 @@ a.active {
 
 #mainHeader {
 	padding: 8%;
-	margin-left: 12%;
+	margin-left: 2%;
 }
 
 #aboutContent {
 	margin: auto;
 	text-align: center;
-	background-color: hsla(220, 93%, 59%, 0.7);
-	padding-top: 2%;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-bottom: 2%;
-	width: 50%;
-	right: 25%;
-	box-sizing: border-box;
+	padding: 2%;
+	width: 60%;
 }
 
-#teaserVideo {
-	padding-bottom: 2%;
+.video-container {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 15px;
+    height: 0;
+    overflow: hidden;
 }
 
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 #modDescription {
 	padding-top: 5%;
@@ -162,13 +172,10 @@ a.active {
 	width: 100%;
 }
 
-#downloadButton {
-	height: 100%;
-}
-
 #credits {
 	text-align: center;
-	padding-top: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 .position {
@@ -187,50 +194,11 @@ a.active {
 	text-align: center;
 }
 
-#downloads {
-	margin-left: 21%;
-	text-align: center;
-	padding: 5%;
-	clear: both;
-   display: table;
-}
-
-.dokiLogos {
-	float: left;
-	width: 33.33%;
-	transition: all .2s ease-in-out;
-	padding: 2%;
-	padding-top: 0%;
-	-webkit-filter: brightness(50%);
-   filter: brightness(50%);
-}
-
-
-.dokiLogos:hover { 
-	transform: scale(1.2); 
-	transition: all .3s ease-in-out;
-   -webkit-filter: brightness(100%);
-   filter: brightness(100%);
-}
-
-.logoDesc {
-	font-family: Halogen;
-	color: hsl(290, 0%, 100%);
-	font-size: 3em;
-	text-align: center;
-}
-
-#fullRelease {
-	margin-left: 12%;
-	float: none;
-	width: 50%;
-}
-
 #mainCharacters {
 	text-align: center;
 	display: inline-block;
 	clear: both;
-   width:100%;
+	 width:100%;
 }
 
 .castHeader {
@@ -251,6 +219,7 @@ a.active {
 	transition: all .2s ease-in-out;
 	-webkit-filter: brightness(50%);
    filter: brightness(50%);
+   cursor: pointer;
 }
 
 
@@ -267,12 +236,90 @@ a.active {
 	font-size: 3em;
 	text-align: center;
 }
+  
+  .modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1;
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 70%;
+  }
+
+  .modal-content{
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+  }
 
 #sideCharacters {
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
-   	width:100%;
+}
+
+#soundtrackContent {
+	text-align: center;
+	margin-left: 18%;
+}
+
+.bandcamp {
+	padding: 5%;
+	float: left;
+}
+
+@media only screen and (max-width: 800px){
+	.bandcamp {
+	  width: 200px;
+	  height: 400px;
+	}
+  }
+
+@media only screen and (min-width: 1050px){
+	.bandcamp {
+	  width: 600px;
+	  height: 800px;
+	}
 }
 
 footer {

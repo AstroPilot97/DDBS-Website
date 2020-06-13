@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-
+<html lang="en">
     <head>
     	<title>Doki Doki Blue Skies</title>
     	<meta charset="UTF-8">
     	<meta name="author" content="Chris Townshend and Jakub Dobron">
-    	<meta name="description" content="A psychological, choice heavy take on the world of DDLC.">
-    	<meta name="keywords" content="DDLC, Visual Novel, Psychological, School, Drama, Romance, Mod, Custom Content">
+    	<meta name="description" content="Doki Doki Blue Skies, a psychological, choice heavy take on the world of DDLC.">
+    	<meta name="keywords" content="Doki Doki Blue Skies, DDBS, Blue Skies, DDLC, Visual Novel, Psychological, School, Drama, Romance, Mod, Custom Content">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     	<link rel="stylesheet" href="stylesheets/style.css">
 		<link rel="icon" href="graphics/logo.png">
+		<link rel="dns-prefetch" href="https://i.ytimg.com">
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+		<link rel="dns-prefetch" href="https://yt3.ggpht.com">
+		<link rel="dns-prefetch" href="https://www.youtube.com">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169317861-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-169317861-1');
+		</script>
     </head>
     
     <body class = "home-bg">
     	<nav class="navbar">
-			<img id="navLogo" src="graphics/home button.png">
+			<img id="navLogo" src="graphics/home button.png" alt="Navbar Logo">
     		<a class="active" href="index.html" target="_self">Home</a>
     		<a href="#aboutContent" target="_self">About</a>
     		<a href="characters.html" target="_self">Characters</a>
     		<a href="soundtrack.html" target="_self">Soundtrack</a>
     		<a href="https://discordapp.com/invite/yUgz578" target="_self">Discord</a>
-    		<a href="team.html" target="_self">The Team</a>
-    		<a href="downloads.html" target="_self">Downloads</a>
+    		<a href="team.html" target="_self">Team</a>
     	</nav>
     	
     	<section id="banner">
     		<figure class="dokiBanner">
-			  <img src="graphics/banner.png" style="width: 100%;">
+			  <img src="graphics/banner.png" style="width: 100%;" alt="Doki Banner">
 			</figure>
 			<video autoplay muted loop id="bgVideo">
 				<source src="graphics/Banner.webm" type="video/webm">
@@ -34,55 +46,61 @@
 		</section>
 
 			<figure id="mainHeader">
-				<img src="graphics/mainText.png">
+				<img src="graphics/mainText.png" style="width: 100%;" alt="Mod quote">
 			</figure>
     			  		
     	
     	<section id="aboutContent">
-			<figure>
-    			<iframe id="teaserVideo" width="1280" height="600" src="https://www.youtube.com/embed/Ce7d8XQ_1_E" frameborder="0" style="width:100%"
+			<div class="video-container">
+    			<iframe title="Trailer Video" src="https://www.youtube.com/embed/Ce7d8XQ_1_E" frameborder="0"
     			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     			</iframe>
-			</figure>	
+			</div>	
 			
-			<img id="modDescription" src="graphics/description.png">
+			<img id="modDescription" src="graphics/New_Home_Page_paper.png" alt="Mod description">
 			
 			<div id="dokiCarousel" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 				  <div class="carousel-item active" data-interval="4000">
-					<img src="galleryImages/Promo.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/class.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/mainCast.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/dubvsub.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/flashback.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/halloween.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/sayorisundayCG.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/momc_call.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/thanksMon.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/monika.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/yuri_fireworks.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/nats_cg.jpg" class="d-block w-100" alt="...">
 				  </div>				  
 				  <div class="carousel-item" data-interval="4000">
-					<img src="galleryImages/sideChars.png" class="d-block w-100" alt="...">
+					<img src="galleryImages/rain.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item" data-interval="4000">
+					<img src="galleryImages/snow.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item" data-interval="4000">
+					<img src="galleryImages/text_message.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item" data-interval="4000">
+					<img src="galleryImages/youngori.jpg" class="d-block w-100" alt="...">
 				  </div>
 				</div>
 			  </div>
-						
-						<img id="features" src="graphics/Features.png"></img>
-						<img id="featureList" src="graphics/featureList.png"></img>
 
 			</section>
 			
 			<section id="bottomRow">
-				<img src="graphics/monika_and_emi.png">
-				<a href="" style="height: 150px; margin-top: 15%; "><img id="downloadButton" src="graphics/Download.png" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+				<img src="graphics/monika_and_emi.png" style="width: 30%;" alt="Left side characters">
+				<a href="https://www.mediafire.com/file/8vv3r8ga0eb17hf/DDBlueSkies.zip/file" target="_blank" style="width: 30%;"><img style="margin-top: 50%; width: 100%;" src="graphics/Download.png" alt="Download button" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
 				<script src="scripts/downloadHover.js"></script>
-				<img src="graphics/sakurai and momc.png">
+				<img src="graphics/sakurai and momc.png" style="width: 30%;" alt="Right side characters">
 			</section>
     				
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
