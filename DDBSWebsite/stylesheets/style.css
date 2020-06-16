@@ -17,7 +17,7 @@ src: url("../fonts/RifficFree-Bold.ttf");
 html{
 	scroll-behavior: smooth;
 	position: relative; 
-	min-height: 100%; 
+	min-height: 100vh; 
 }
 
 .home-bg {
@@ -25,11 +25,30 @@ html{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	min-height: 100vh; 
 }
+
+@media only screen and (max-width: 1200px){
+	.home-bg {
+		background-image: url("../graphics/bg\(mobile\).jpg");
+	}
+
+	body:after{
+		position:fixed; /* stretch a fixed position to the whole screen */
+		top:0;
+		height:100vh; /* fix for mobile browser address bar appearing disappearing */
+		left:0;
+		right:0;
+		z-index:-1; /* needed to keep in the background */
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  }
+} 
 
 .team-bg {
 	background-image: url("../graphics/Club_festival.png");
@@ -69,6 +88,7 @@ html{
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   background-attachment: scroll;
 }
 
 .navbar {
@@ -82,9 +102,21 @@ html{
 	width: 100%;
 }
 
+@media only screen and (max-width: 1200px){
+	.navbar {
+		font-size: 1.2em;
+	}
+} 
+
 #navLogo {
 	margin-right: 20px;
 }
+
+@media only screen and (max-width: 1200px){
+	#navLogo {
+		width: 15%;
+	}
+} 
 
 .navbar a {
 	color: hsl(192, 100%, 89%);
@@ -125,7 +157,6 @@ a.active {
 
 #mainHeader {
 	padding: 8%;
-	margin-left: 2%;
 }
 
 #aboutContent {
@@ -134,6 +165,12 @@ a.active {
 	padding: 2%;
 	width: 60%;
 }
+
+@media only screen and (max-width: 1200px){
+	#aboutContent {
+		width: 100%;
+	}
+} 
 
 .video-container {
 	position: relative;
@@ -172,11 +209,59 @@ a.active {
 	width: 100%;
 }
 
+#monEmi {
+	width: 30%;
+}
+
+#sakMomc {
+	width: 30%;
+}
+
+@media only screen and (max-width: 1200px){
+	#bottomRow {
+		display: inline-block;
+		justify-content: center;
+		margin-bottom: 10%;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#monEmi {
+		height: 0;
+		visibility: hidden;
+		width: 0;
+	}
+
+	#sakMomc {
+		height: 0;
+		visibility: hidden;
+		width: 0;
+	}
+}
+
+#downloadButton {
+	width: 30%; 
+	margin-right: 20%;
+}
+
+@media only screen and (max-width: 1200px){
+	#bottomRow img {
+		width: 100%;
+	}
+	
+}
+
 #credits {
 	text-align: center;
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
+
+@media only screen and (max-width: 1200px){
+	#credits {
+		padding-bottom: 10%;
+	}
+} 
 
 .position {
 	font-family: Halogen;
@@ -236,12 +321,26 @@ a.active {
 	font-size: 3em;
 	text-align: center;
 }
+
+@media only screen and (max-width: 1200px){
+	.mainCast {
+		width:33%;
+		margin-left:0%;
+	}
+} 
+
+@media only screen and (max-width: 1200px){
+	.mainDesc {
+		font-size: 1.75em;
+	}
+} 
+
   
   .modal {
 	display: none; 
 	position: fixed; 
 	z-index: 1;
-	padding-top: 100px; 
+	padding-top: 5%; 
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -286,9 +385,10 @@ a.active {
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 1200px){
 	.modal-content {
 	  width: 100%;
+	  margin-top: 15%; 
 	}
   }
 
@@ -298,9 +398,30 @@ a.active {
 	text-align: center;
 }
 
+#sideChars {
+	width:60%;
+	padding-bottom: 2%;
+}
+
+@media only screen and (max-width: 1200px){
+	#sideChars {
+	  width: 90%;
+	  padding-bottom: 10%;
+	}
+  }
+
+
 #soundtrackContent {
 	text-align: center;
 	margin-left: 18%;
+	align-content: center;
+}
+
+#albumCover {
+	width: 30%; 
+	padding: 2%; 
+	margin-right: 20%; 
+	margin-top: 5%;
 }
 
 .bandcamp {
@@ -308,16 +429,31 @@ a.active {
 	float: left;
 }
 
-@media only screen and (max-width: 800px){
-	.bandcamp {
-	  width: 200px;
-	  height: 400px;
+@media only screen and (max-width: 1200px){
+	#soundtrackContent {
+		display: block;
+		margin-left: 0%;
 	}
   }
 
-@media only screen and (min-width: 1050px){
+  @media only screen and (max-width: 1200px){
 	.bandcamp {
-	  width: 600px;
+	  float: none;
+	  width: 100%;
+	  height: 700px;
+	}
+  }
+
+  @media only screen and (max-width: 1200px){
+	#albumCover {
+		width: 100%; 
+		margin-right: 0%; 
+	}
+  }
+
+@media only screen and (min-width: 1300px){
+	.bandcamp {
+	  width: 580px;
 	  height: 800px;
 	}
 }
@@ -336,9 +472,17 @@ footer {
 	color: hsl(290, 0%, 100%);
 	font-family: Halogen;
 	font-size: 1em;
+	margin-bottom: 0;
 }
 
 #footerMessage a {
 	color: hsl(290, 0%, 100%);
 	text-decoration: none;
+	
 }
+
+@media only screen and (max-width: 1200px){
+	#footerMessage {
+		font-size: 0.5rem;
+	}
+} 
