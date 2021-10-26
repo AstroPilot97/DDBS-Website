@@ -20,13 +20,7 @@ html{
 	min-height: 100vh; 
 }
 
-.navbar {
-	background-color: hsla(220, 93%, 59%, 0.6);
-	font-size: 2em;
-	font-family: RifficFree-Bold;
-}
-
-/*.home-bg {
+.home-bg {
 	background-image: url("../graphics/bg.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -48,12 +42,12 @@ html{
 	}
 
 	body:after{
-		position:fixed; 
+		position:fixed; /* stretch a fixed position to the whole screen */
 		top:0;
-		height:100vh; 
+		height:100vh; /* fix for mobile browser address bar appearing disappearing */
 		left:0;
 		right:0;
-		z-index:-1; 
+		z-index:-1; /* needed to keep in the background */
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -102,7 +96,16 @@ html{
    background-attachment: scroll;
 }
 
-
+.navbar {
+	background-color: hsla(220, 93%, 59%, 0.6);
+	font-size: 2em;
+	font-family: RifficFree-Bold;
+	display: inline-flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
 
 @media only screen and (max-width: 1200px){
 	.navbar {
@@ -143,7 +146,7 @@ a.active {
 }
 
 #banner video {
-	position: relative; 
+	position: relative; /* could be absolute if needed */
 	z-index: -1;
     bottom: 1px;
 }
@@ -363,6 +366,7 @@ a.active {
 	to {transform:scale(1)}
   }
   
+  /* The Close Button */
   .close {
 	position: absolute;
 	top: 15px;
@@ -380,6 +384,7 @@ a.active {
 	cursor: pointer;
   }
   
+  /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 1200px){
 	.modal-content {
 	  width: 100%;
@@ -494,4 +499,4 @@ footer {
 	#footerMessage {
 		font-size: 0.5rem;
 	}
-}*/
+} 
